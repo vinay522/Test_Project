@@ -8,4 +8,11 @@ class Users_db(models.Model):
 	email = models.EmailField(max_length=100)
 
 	def __str__(self):
+		return self.phno
+
+class Test_db(models.Model):
+	name = models.CharField(max_length=200)
+	phno = models.CharField(max_length=100)
+
+	def __str__(self):
 		return self.name

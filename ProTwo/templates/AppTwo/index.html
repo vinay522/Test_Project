@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>AppTwo - Image</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/mystyle.css" %}">
+</head>
+<body>
+	{{ help_info }}
+	<img src="{% static "images/image1.jpg" %}" alt="Image didn't load">
+	<h3>Go to /users or <a href="users.html">Click here</a> to see the User information </h3>
+	<h3>Go to /formpage or <a href="formpage.html">Click here</a> to see the Form </h3>
+	<h3>Go to /signup or <a href="signup.html">Click here</a> to sign up </h3>
+
+
+</body>
+</html>
